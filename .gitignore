@@ -4,6 +4,8 @@
 *.bld
 *.cmd_log
 *.drc
+*.exe
+*.ini
 *.ll
 *.lso
 *.msd
@@ -25,6 +27,7 @@
 *.twx
 *.unroutes
 *.ut
+*.vdb
 *.xpi
 *.xst
 *_bitgen.xwbt
