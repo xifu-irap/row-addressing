@@ -1,0 +1,2 @@
+vhdl isim_temp "../src/div_freq_RS.vhd"
+vhdl isim_temp "../src/div_freq_RS_tb.vhd"

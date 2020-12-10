@@ -1,0 +1,5 @@
+vhdl isim_temp "../src/row_select.vhd"
+vhdl isim_temp "../src/div_freq_RS.vhd"
+vhdl isim_temp "../src/cluster_select.vhd"
+vhdl isim_temp "../src/FAS_module.vhd"
+vhdl isim_temp "../src/FAS_module_tb.vhd"

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/ATHENA_X-IFU/Documents/Noemie2020/solution_registre_simple/row-addressing/project_row_addressing/div_freq_RS_tb_isim_beh.exe" -prj "C:/Users/ATHENA_X-IFU/Documents/Noemie2020/solution_registre_simple/row-addressing/project_row_addressing/div_freq_RS_tb_beh.prj" "work.div_freq_RS_tb" 
