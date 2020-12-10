@@ -2,11 +2,13 @@
 *.bgn
 *.bit
 *.bld
+*.cmd
 *.cmd_log
 *.drc
 *.exe
 *.ini
 *.ll
+*.log
 *.lso
 *.msd
 *.msk
@@ -29,6 +31,7 @@
 *.ut
 *.vdb
 *.xpi
+*.xmsgs
 *.xst
 *_bitgen.xwbt
 *_envsettings.html
@@ -68,3 +71,4 @@ xlnx_auto_0_xdb/
 xst/
 _ngo/
 _xmsgs/
+isim/
