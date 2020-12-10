@@ -1,2 +1,0 @@
-vhdl work "../src/div_freq_RS.vhd"
-vhdl work "../src/div_freq_RS_tb.vhd"

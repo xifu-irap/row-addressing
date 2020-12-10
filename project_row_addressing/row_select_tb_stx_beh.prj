@@ -1,2 +1,0 @@
-vhdl isim_temp "../src/row_select.vhd"
-vhdl isim_temp "../src/row_select_tb.vhd"
