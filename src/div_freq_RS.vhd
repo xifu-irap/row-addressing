@@ -31,7 +31,7 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity div_freq_RS is
-    Port ( i_clk : in  STD_LOGIC; --master clock at 100 MHz
+    Port ( i_clk : in  STD_LOGIC; --master clock at 10 MHz
            i_rst : in  STD_LOGIC; --reset
            o_tick_RS_re : out  STD_LOGIC); -- output signal, clock at 5 MHz
 end div_freq_RS;
@@ -49,11 +49,11 @@ div_freq_RS : process(i_clk,i_rst) -- the process is sensitive to the i_clk and 
 	else 
 		if (rising_edge(i_clk)) then -- if we detect  rising edge of the clk
 			cmp_int <= cmp_int +1; -- the counter is incremented
-			if (cmp_int < "10011") then -- while we have not detected 20 rising edge (counter=19 because it starts at 0) of the master clk (20 x 10ns = 200ns)
-				o_tick_RS_re <= '0'; -- o_tick_RS_re goes to 0
-			else -- if we detected 20 rising edge of the clk
+			if (cmp_int = "10011") then -- when we have detected 20 rising edge (counter=19 because we start at 0) of the master clk (20 x 10ns = 200ns)
 				o_tick_RS_re <= '1'; -- o_tick_RS_re goes to 1
 				cmp_int <= "00000"; -- reset the counter to 0
+			else -- if we have not detected 20 rising edge of the clk
+				o_tick_RS_re <= '0'; -- o_tick_RS_re goes to 0
 			end if;
 		end if;
 	end if;
